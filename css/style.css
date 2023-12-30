@@ -1,5 +1,5 @@
-/* ESTILOS GLOBALES - RESOLUCION DESKTOP 1200PX */
-body {
+  /* ESTILOS GLOBALES - RESOLUCION DESKTOP 1200PX */
+  body {
     font-family: 'Merienda', cursive;
     background-color: #ECD8B1;
     padding: 0;
@@ -107,6 +107,7 @@ footer img {
     height: 600px;
     background-image: url(../img/novios-serpentina-2-foto.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color: white;
     display: flex;
@@ -114,6 +115,8 @@ footer img {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .descripcionIndex {
     margin-top: 20px;
@@ -201,6 +204,7 @@ img .imagenServicios {
     height: 470px;
     margin-top: 30px;
     object-fit: cover;
+    transform: rotatex(360deg);
 }
 
 .cardBodas {
@@ -275,18 +279,21 @@ img .imagenServicios {
     width: 550px;
     height: 250px;
     object-fit: cover;
+    transform: rotatey(360deg);
 }
 
 .imagenValores {
     width: 550px;
     height: 250px;
     object-fit: cover;
+    transform: rotatey(360deg);
 }
 
 .imagenVision {
     width: 550px;
     height: 250px;
     object-fit: cover;
+    transform: rotatey(360deg);
 }
 
 /* BLOG */
@@ -314,6 +321,7 @@ img .imagenServicios {
     width: 320px;
     height: 250px;
     object-fit: cover;
+    transform: rotatex(360deg);
 }
 
 /* CONTACTO */
