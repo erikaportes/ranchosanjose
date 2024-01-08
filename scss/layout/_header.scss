@@ -1,0 +1,54 @@
+/* HEADER/NAVBAR */
+nav {
+    background-color: $color-secundario;
+
+    .navbar-logo img {
+        @include medidas(150px, 100px);
+        object-fit: cover;
+    }
+
+    .navbar-toggler {
+        background-color: $color-primario;
+    }
+
+    .nav-link {
+        color: $color-primario;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: $color-claro;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+}
+
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .navbar-logo img {
+        margin-left: 20px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin-right: 20px;
+    }
+}
+
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 320PX */
+@media screen and (max-width: 320px) {
+    .navbar-logo img {
+        margin-left: 5px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin-right: 10px;
+    }
+}

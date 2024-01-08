@@ -1,138 +1,327 @@
-   /* ESTILOS GLOBALES - RESOLUCION DESKTOP 1200PX */
-   body {
-    font-family: 'Merienda', cursive;
-    background-color: #ECD8B1;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* VARIABLES */
+/* RESET - ESTILOS GLOBALES*/
+body {
+  font-family: "Merienda", cursive;
+  background-color: #ECD8B1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body ul li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+}
+body h1 {
+  font-size: xx-large;
+}
+body h2 {
+  font-size: x-large;
+}
+body h3 {
+  font-size: large;
+}
+body p {
+  font-size: medium;
 }
 
-ul, li {
-    list-style-type: none;
+/* TIPOGRAFIA */
+body {
+  font-family: "Merienda", cursive;
 }
 
-h1 {
-    font-size: xx-large;
+/* BUTTON */
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 500px;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+  border: 4px solid #1E1E1E;
+  border-radius: 15%;
+  width: 200px;
+  height: 30px;
 }
 
-h2 {
-    font-size: x-large;
+/* RESOLUCION MENOR A 320 PX */
+@media screen and (max-width: 320px) {
+  .button {
+    margin-left: 35px;
+  }
 }
-
-h3 {
-    font-size: large;
-}
-
-p {
-    font-size: medium;
-}
-
-/* HEADER */
-nav {
-    background-color: #1E1E1E;
-}
-
-.navbar-logo img {
-    width: 250px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.nav-link {
-    color: #BCA474;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    color: #ecd8b1;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-}
-
-.navbar-toggler {
-    background-color: #BCA474;
-}
-
-/* MAIN */
-
-main {
-    background-color: #ECD8B1;
-    color: black;
-}
-
+/* WHATSAPP */
 .whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 80px;
-    transition: height 3s width 3s;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 80px;
+  transition: height 3s width 3s;
+}
+.whatsapp:hover {
+  width: 120px;
+  height: 120px;
 }
 
-.whatsapp:hover {
-    width: 120px;
-    height: 120px;
+/* HEADER/NAVBAR */
+nav {
+  background-color: #1E1E1E;
+}
+nav .navbar-logo img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+nav .navbar-toggler {
+  background-color: #BCA474;
+}
+nav .nav-link {
+  color: #BCA474;
+}
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: #ECD8B1;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+  .navbar-logo img {
+    margin-left: 20px;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin-right: 20px;
+  }
+}
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 320PX */
+@media screen and (max-width: 320px) {
+  .navbar-logo img {
+    margin-left: 5px;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin-right: 10px;
+  }
+}
+/* MAIN */
+main {
+  background-color: #ECD8B1;
+  color: #1E1E1E;
 }
 
 .paddings {
-    padding-top: 115px;
-    padding-bottom: 30px;
+  padding-top: 115px;
+  padding-bottom: 30px;
 }
 
 /* FOOTER */
-
 footer {
-    background-color: #1E1E1E;
-    width: 100%;
-    color: #BCA474;
-    font-size: small;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
+  background-color: #1E1E1E;
+  width: 100%;
+  color: #BCA474;
+  font-size: small;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .mediosContacto {
+  padding-top: 10px;
+  padding-left: 0px;
+}
+footer .ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  padding-top: 17px;
+}
+footer .icono {
+  width: 25px;
+}
+footer .rrss {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+footer img {
+  width: 50px;
+  margin: 5px;
+  transition: height 3s width 3s;
+}
+footer img:hover {
+  width: 65px;
+  height: 65px;
+}
+
+/* FOOTER RESOLUCION MENOR A 768px */
+@media screen and (max-width: 768px) {
+  footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-footer img {
-    width: 50px;
-    margin: 5px;
-    transition: height 3s width 3s;
-}
-
-footer img:hover {
-    width: 65px;
-    height: 65px;
-}
-
-.ubicacion {
+    align-content: center;
+    align-items: flex-start;
+  }
+  footer .icono {
+    width: 25px;
+  }
+  footer .rrss {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
     align-content: center;
-    padding-top: 17px;
-}
-
-.rrss {
-    display: flex;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding-left: 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  footer img {
+    width: 50px;
+  }
 }
-
-.icono {
+/* FOOTER RESOLUCION MENOR A 320px */
+@media screen and (max-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  footer .icono {
     width: 25px;
+  }
+  footer ul .rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer img {
+    width: 50px;
+    padding-top: 20px;
+  }
 }
-
-.mediosContacto {
-    padding-top: 10px;
-    padding-left: 0px;
-}
-
 /* INDEX */
-
 .portadaIndex {
-    height: 670px;
+  height: 670px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation-name: miAnimacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-delay: 0s;
+}
+
+@keyframes miAnimacion {
+  0% {
+    background-image: url(../img/novios-serpentina-2-foto.png);
+  }
+  20% {
+    background-image: url(../img/novios-caballos-1-foto.jpg);
+  }
+  40% {
+    background-image: url(../img/novios-sentados-foto.jpg);
+  }
+  60% {
+    background-image: url(../img/novios-pastel-foto.png);
+  }
+  80% {
+    background-image: url(../img/sillas-blancas-foto.jpg);
+  }
+  100% {
+    background-image: url(../img/novios-arbustos-foto.png);
+  }
+}
+.descripcionIndex {
+  margin-top: 20px;
+}
+.descripcionIndex h2 {
+  padding-bottom: 10px;
+}
+.descripcionIndex h3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+.descripcionIndex .imagenesAbajoIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
+  width: 390px;
+  height: 300px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+.descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
+  width: 390px;
+  height: 300px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+.descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
+  width: 390px;
+  height: 300px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+.descripcionIndex .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 500px;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+  border: 4px solid #1E1E1E;
+  border-radius: 15%;
+  width: 200px;
+  height: 30px;
+}
+
+/* INDEX RESOLUCION MENOR A 768 PX */
+@media screen and (max-width: 768px) {
+  .portadaIndex {
+    min-height: 670px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,1046 +329,719 @@ footer img:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: center;
+    flex-wrap: wrap;
     animation-name: miAnimacion;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 15s;
     animation-delay: 0s;
-}
-
-@keyframes miAnimacion {
+  }
+  @keyframes miAnimacion {
     0% {
-        background-image: url(../img/novios-serpentina-2-foto.png);
+      background-image: url(../img/novios-serpentina-2-foto.png);
     }
-
     20% {
-        background-image: url(../img/novios-caballos-1-foto.jpg);
+      background-image: url(../img/novios-caballos-1-foto.jpg);
     }
-
     40% {
-        background-image: url(../img/novios-sentados-foto.jpg);
+      background-image: url(../img/novios-sentados-foto.jpg);
     }
-
     60% {
-        background-image: url(../img/novios-pastel-foto.png);
+      background-image: url(../img/novios-pastel-foto.png);
     }
-
     80% {
-        background-image: url(../img/sillas-blancas-foto.jpg);
+      background-image: url(../img/sillas-blancas-foto.jpg);
     }
-
     100% {
-        background-image: url(../img/novios-arbustos-foto.png);
+      background-image: url(../img/novios-arbustos-foto.png);
     }
-}
-
-
-.descripcionIndex {
+  }
+  .descripcionIndex {
     margin-top: 20px;
-}
-
-.descripcionIndex h2 {
+    padding-left: 24px;
+  }
+  .descripcionIndex h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding-bottom: 10px;
+  }
+  .descripcionIndex h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .descripcionIndex p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .descripcionIndex .imagenesAbajoIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
+    width: 720px;
+    height: 600px;
+    padding-top: 10px;
+    object-fit: cover;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
+    width: 720px;
+    height: 600px;
+    padding-top: 10px;
+    object-fit: cover;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
+    width: 720px;
+    height: 600px;
+    padding-top: 10px;
+    object-fit: cover;
+  }
 }
-
-.descripcionIndex h3 {
+/* INDEX RESOLUCION MENOR A 320PX*/
+@media screen and (max-width: 320px) {
+  .portadaIndex {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    animation-name: miAnimacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-delay: 0s;
+  }
+  @keyframes miAnimacion {
+    0% {
+      background-image: url(../img/novios-serpentina-2-foto.png);
+    }
+    20% {
+      background-image: url(../img/novios-caballos-1-foto.jpg);
+    }
+    40% {
+      background-image: url(../img/novios-sentados-foto.jpg);
+    }
+    60% {
+      background-image: url(../img/novios-pastel-foto.png);
+    }
+    80% {
+      background-image: url(../img/sillas-blancas-foto.jpg);
+    }
+    100% {
+      background-image: url(../img/novios-arbustos-foto.png);
+    }
+  }
+  .descripcionIndex {
+    margin-top: 20px;
+    padding-left: 24px;
+  }
+  .descripcionIndex h2 {
     display: flex;
     align-items: center;
     flex-direction: row;
     padding-bottom: 10px;
-}
-
-.imagenesAbajoIndex {
+  }
+  .descripcionIndex h3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  .descripcionIndex p {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+  .descripcionIndex .imagenesAbajoIndex {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-bottom: 25px;
-}
-
-.fotoIndex1 {
-    width: 390px;
-    height: 300px;
+    flex-wrap: wrap;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
+    width: 300px;
+    height: 250px;
     padding-top: 10px;
+    padding-right: 24px;
     object-fit: cover;
-}
-
-.fotoIndex2 {
-    width: 390px;
-    height: 300px;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
+    width: 300px;
+    height: 250px;
     padding-top: 10px;
+    padding-right: 24px;
     object-fit: cover;
-}
-
-.fotoIndex3 {
-    width: 390px;
-    height: 300px;
+  }
+  .descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
+    width: 300px;
+    height: 250px;
     padding-top: 10px;
+    padding-right: 24px;
     object-fit: cover;
+  }
+  .descripcionIndex .button {
+    margin-left: 35px;
+  }
 }
-
-.pideCotizacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
-}
-
-
 /* SERVICIOS */
 .mainServicios {
-    padding-top: 150px;
-    row-gap: 50px;
-    column-gap: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 1fr 550px;
-    grid-template-rows: 150px 150px 1fr;
-    grid-template-areas:
-        "portadaServicios explicacionServicios"
-        "portadaServicios listaServicios"
-        "portadaServicios pideCotiz";
-    justify-content: space-evenly;
+  padding-top: 150px;
+  row-gap: 50px;
+  column-gap: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 550px;
+  grid-template-rows: 150px 150px 1fr;
+  grid-template-areas: "portadaServicios explicacionServicios" "portadaServicios listaServicios" "portadaServicios pideCotiz";
+  justify-content: space-evenly;
 }
-
-img .imagenServicios {
-    margin-top: 10px;
+.mainServicios .portadaServicios {
+  grid-area: portadaServicios;
+  padding-bottom: 10px;
+  width: 550px;
 }
-
-.portadaServicios {
-    grid-area: portadaServicios;
-    padding-bottom: 10px;
-    width: 550px;
+.mainServicios .portadaServicios .imagenServicios {
+  width: 550px;
+  height: 330px;
+  margin-top: 20px;
+  object-fit: cover;
+  transition: transform 2s;
 }
-
-.imagenServicios {
-    width: 550px;
-    height: 330px;
-    margin-top: 20px;
-    object-fit: cover;
-    transition: transform 2s
+.mainServicios .portadaServicios .imagenServicios:hover {
+  transform: rotatey(360deg);
 }
-
-.imagenServicios:hover {
-    transform: rotatey(360deg);
+.mainServicios .explicacionServicios {
+  grid-area: explicacionServicios;
+  font-size: x-large;
 }
-
-.explicacionServicios {
-    grid-area: explicacionServicios;
-    font-size: x-large;
+.mainServicios .listaServicios {
+  grid-area: listaServicios;
+  margin-top: 40px;
+  list-style-type: circle;
 }
-
-.listaServicios {
-    grid-area: listaServicios;
-    margin-top: 40px;
-    list-style-type: circle;
-}
-
-.pideCotiz {
-    grid-area: pideCotiz;
-    display: flex;
-    justify-content: start;
-    align-content: center;
-    margin-top: 40px;
-}
-
-ul, li {
-  padding-left: 0px;
-}
-
-/* NOSOTROS */
-
-.paddingNosotros {
-    padding-top: 150px;
-    margin-bottom: 30px;
-}
-
-.cardMision {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.cardVision {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.cardValores {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.textoMision {
-    width: 550px;
-    height: 250px;
-    padding-top: 30px;
-}
-
-.textoVision {
-    width: 550px;
-    height: 250px;
-    padding-top: 40px;
-}
-
-.textoValores {
-    width: 550px;
-    height: 250px;
-    padding-top: 20px;
-}
-
-.imagenMision {
-    width: 550px;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 2s
-}
-
-.parrafoMision {
-    font-size: large;
-}
-
-.parrafoVision {
-    font-size: large
-}
-
-.parrafoValores {
-    font-size: large;
-}
-
-.imagenMision:hover {
-    transform: rotatey(360deg);
-}
-
-.imagenValores {
-    width: 550px;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 2s
-}
-
-.imagenValores:hover {
-    transform: rotatey(360deg);
-}
-
-.imagenVision {
-    width: 550px;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 2s;
-}
-
-.imagenVision:hover {
-    transform: rotatey(360deg);
-}
-
-/* BLOG */
-
-.blog {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    padding-top: 110px;
-    padding-bottom: 10px;
-    margin: 20px
-}
-
-.cardBlog {
-    width: 320px;
-    height: auto;
-    margin: 20px;
-
-}
-
-.imagenBlog {
-    width: 320px;
-    height: 250px;
-    object-fit: cover;
-}
-
-/* CONTACTO */
-
-.textoContactanos {
-    margin-bottom: 15px;
-    margin-left: 100px;
-}
-
-.paddingsContacto {
-    margin-left: 400px;
-    padding-top: 150px;
-    padding-bottom: 40px;
-}
-
-.inputNombre {
-    width: 350px;
-    margin-bottom: 10px;
-}
-
-.inputApellido {
-    width: 350px;
-    margin-bottom: 10px;
-}
-
-.inputTelefono {
-    width: 350px;
-    margin-bottom: 10px;
-}
-
-.inputCorreo {
-    width: 360px;
-    margin-bottom: 10px;
-}
-
-.inputComentarios {
-    width: 420px;
-    margin-bottom: 10px;
-}
-
-.botonesForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-right: 115px;
+.mainServicios .pideCotiz {
+  grid-area: pideCotiz;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  margin-top: 40px;
 }
 
 /* SERVICIOS RESOLUCION MENOR A 768px */
 @media screen and (max-width: 768px) {
   .mainServicios {
-      padding-top: 140px;
-      row-gap: 50px;
-      column-gap: 30px;
-      margin-right: 35px;
-      margin-left: 40px;
-      margin-bottom: 30px;
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 1fr 140px 150px 0px;
-      grid-template-areas:
-          "portadaServicios"
-          "explicacionServicios"
-          "listaServicios"
-          "pideCotiz";
-      justify-content: space-around;
+    padding-top: 140px;
+    row-gap: 50px;
+    column-gap: 30px;
+    margin-left: 40px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 140px 150px 0px;
+    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "pideCotiz";
+    justify-content: space-around;
   }
-
-  img .imagenServicios {
-      margin-top: 10px;
+  .mainServicios .portadaServicios {
+    grid-area: portadaServicios;
+    padding-bottom: 10px;
+    width: 700px;
   }
-
-  .portadaServicios {
-      grid-area: portadaServicios;
-      padding-bottom: 10px;
-      width: 700px;
+  .mainServicios .portadaServicios .imagenServicios {
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: transform 2s;
   }
-
-  .imagenServicios {
-      width: 700px;
-      height: 400px;
-      margin-top: 20px;
-      object-fit: cover;
-      transition: transform 2s
+  .mainServicios .portadaServicios .imagenServicios:hover {
+    transform: rotatey(360deg);
   }
-
-  .imagenServicios:hover {
-      transform: rotatey(360deg);
+  .mainServicios .explicacionServicios {
+    grid-area: explicacionServicios;
+    font-size: x-large;
   }
-
-  .explicacionServicios {
-      grid-area: explicacionServicios;
-      font-size: x-large;
+  .mainServicios .listaServicios {
+    grid-area: listaServicios;
+    margin-top: 40px;
   }
-
-  .listaServicios {
-      grid-area: listaServicios;
-      margin-top: 40px;
-  }
-
-  ul, li {
-      padding-left: 0px;
-  }
-
-  .pideCotiz {
-      grid-area: pideCotiz;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      margin-top: 40px;
-      color: black;
+  .mainServicios .pideCotiz {
+    grid-area: pideCotiz;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: black;
   }
 }
-
 /* SERVICIOS RESOLUCION MENOR A 320px */
 @media screen and (max-width: 320px) {
   .mainServicios {
-      padding-top: 140px;
-      row-gap: 50px;
-      column-gap: 30px;
-      margin-top: 0px;
-      margin-right: 30px;
-      margin-left: 30px;
-      margin-bottom: 0px;
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 320px 240px 120px 1fr;
-      grid-template-areas:
-          "portadaServicios"
-          "explicacionServicios"
-          "listaServicios"
-          "pideCotiz";
-      justify-content: space-around;
+    padding-top: 140px;
+    row-gap: 50px;
+    column-gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 320px 240px 120px 1fr;
+    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "pideCotiz";
+    justify-content: space-around;
   }
+  .mainServicios .portadaServicios {
+    grid-area: portadaServicios;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .mainServicios .portadaServicios .imagenServicios {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+    object-fit: cover;
+    transition: transform 2s;
+  }
+  .mainServicios .portadaServicios .imagenServicios:hover {
+    transform: rotatey(360deg);
+  }
+  .mainServicios .explicacionServicios {
+    grid-area: explicacionServicios;
+    font-size: large;
+  }
+  .mainServicios .listaServicios {
+    grid-area: listaServicios;
+    margin-top: 30px;
+  }
+  .mainServicios .pideCotiz {
+    grid-area: pideCotiz;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+/* NOSOTROS */
+.paddingNosotros {
+  padding-top: 150px;
+  margin-bottom: 30px;
+}
+.paddingNosotros .cardMision {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.paddingNosotros .cardMision .textoMision {
+  width: 550px;
+  height: 250px;
+  padding-top: 30px;
+}
+.paddingNosotros .cardMision .parrafoMision {
+  font-size: large;
+}
+.paddingNosotros .cardMision .imagenMision {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 2s;
+}
+.paddingNosotros .cardMision .imagenMision:hover {
+  transform: rotatey(360deg);
+}
+.paddingNosotros .cardVision {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.paddingNosotros .cardVision .imagenVision {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 2s;
+}
+.paddingNosotros .cardVision .imagenVision:hover {
+  transform: rotatey(360deg);
+}
+.paddingNosotros .cardVision .textoVision {
+  width: 550px;
+  height: 250px;
+  padding-top: 40px;
+}
+.paddingNosotros .cardVision .parrafoVision {
+  font-size: large;
+}
+.paddingNosotros .cardValores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.paddingNosotros .cardValores .textoValores {
+  width: 550px;
+  height: 250px;
+  padding-top: 0px;
+}
+.paddingNosotros .cardValores .parrafoValores {
+  font-size: large;
+}
+.paddingNosotros .cardValores .imagenValores {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 2s;
+}
+.paddingNosotros .cardValores .imagenValores:hover {
+  transform: rotatey(360deg);
+}
 
-  img .imagenServicios {
-      margin-top: 10px;
+/* NOSOTROS RESOLUCION MENOR A 768px */
+@media screen and (max-width: 768px) {
+  .paddingNosotros {
+    padding-top: 110px;
+    margin-bottom: 30px;
   }
-
-  .portadaServicios {
-      grid-area: portadaServicios;
-      padding-bottom: 10px;
-      width: 300px;
+  .paddingNosotros .cardMision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
-
-  .imagenServicios {
-      width: 300px;
-      height: 200px;
-      margin-top: 20px;
-      object-fit: cover;
-      transition: transform 2s
+  .paddingNosotros .cardMision .textoMision {
+    width: 700px;
+    height: 180px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
   }
-
-  .imagenServicios:hover {
-      transform: rotatey(360deg);
+  .paddingNosotros .cardMision .imagenMision {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
   }
-
-  .explicacionServicios {
-      grid-area: explicacionServicios;
-      font-size: large;
+  .paddingNosotros .cardVision {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
-
-  .listaServicios {
-      grid-area: listaServicios;
-      margin-top: 30px;
+  .paddingNosotros .cardVision .imagenVision {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
   }
-
-  ul, li {
-      padding-left: 0px;
+  .paddingNosotros .cardVision .textoVision {
+    width: 700px;
+    height: 190px;
+    padding-bottom: 0px;
   }
-
-  .pideCotiz {
-      grid-area: pideCotiz;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      margin-top: 30px;
+  .paddingNosotros .cardValores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
+  .paddingNosotros .cardValores .textoValores {
+    width: 700px;
+    height: 190px;
+    margin: 20px;
+  }
+  .paddingNosotros .cardValores .imagenValores {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 40px;
+  }
+}
+/* NOSOTROS RESOLUCION MENOR A 320px */
+@media screen and (max-width: 320px) {
+  .paddingNosotros {
+    padding-top: 130px;
+    margin-bottom: 30px;
+  }
+  .paddingNosotros .cardMision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  .paddingNosotros .cardMision .textoMision {
+    width: 300px;
+    height: 180px;
+    margin-bottom: 70px;
+    padding-top: 10px;
+  }
+  .paddingNosotros .cardMision .imagenMision {
+    margin-top: 90px;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .paddingNosotros .cardVision {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+  .paddingNosotros .cardVision .textoVision {
+    width: 300px;
+    height: 190px;
+    padding-bottom: 0px;
+  }
+  .paddingNosotros .cardVision .imagenVision {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 60px;
+  }
+  .paddingNosotros .cardValores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+  .paddingNosotros .cardValores .textoValores {
+    width: 300px;
+    height: 190px;
+    padding-bottom: 0px;
+  }
+  .paddingNosotros .cardValores .imagenValores {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 160px;
+  }
+}
+/* BLOG */
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-top: 110px;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+.blog .cardBlog {
+  width: 320px;
+  height: auto;
+  margin: 20px;
+}
+.blog .cardBlog .imagenBlog {
+  width: 320px;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* BLOG RESOLUCION MENOR A 768px */
 @media screen and (max-width: 768px) {
-    .blog {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 110px;
-        padding-bottom: 10px;
-        margin: 20px
-    }
-
-    .cardBlog {
-        width: 700px;
-        height: auto;
-        margin: 20px;
-    }
-
-    .imagenBlog {
-        width: 700px;
-        height: 300px;
-        object-fit: cover;
-    }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
-
+  .blog .cardBlog {
+    width: 700px;
+    height: auto;
+    margin: 20px;
+  }
+  .blog .cardBlog .imagenBlog {
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
 /* BLOG RESOLUCION MENOR A 320px */
 @media screen and (max-width: 320px) {
-    .blog {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 105px;
-        padding-bottom: 0px;
-        margin: 20px
-    }
-
-    .cardBlog {
-        width: 300px;
-        height: auto;
-        margin: 20px;
-    }
-
-    .imagenBlog {
-        width: 300px;
-        height: 150px;
-        object-fit: cover;
-    }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 105px;
+    padding-bottom: 0;
+    margin: 20px;
+  }
+  .blog .cardBlog {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  .blog .cardBlog .imagenBlog {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+  }
 }
-
-
-/* NOSOTROS RESOLUCION MENOR A 768px */
-@media screen and (max-width: 768px) {
-    .paddingNosotros {
-        padding-top: 110px;
-        margin-bottom: 30px;
-    }
-
-    .cardMision {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .cardVision {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .cardValores {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .textoMision {
-        width: 700px;
-        height: 180px;
-        padding-bottom: 0px;
-        margin-bottom: 20px;
-    }
-
-    .textoVision {
-        width: 700px;
-        height: 190px;
-        padding-bottom: 0px;
-    }
-
-    .textoValores {
-        width: 700px;
-        height: 190px;
-        padding-bottom: 0px;
-    }
-
-    .imagenMision {
-        width: 700px;
-        height: 350px;
-        object-fit: cover;
-    }
-
-    .imagenValores {
-        width: 700px;
-        height: 350px;
-        object-fit: cover;
-        margin-top: 25px;
-    }
-
-    .imagenVision {
-        width: 700px;
-        height: 350px;
-        object-fit: cover;
-    }
+/* CONTACTO */
+.paddingsContacto {
+  margin-left: 400px;
+  padding-top: 150px;
+  padding-bottom: 40px;
 }
-
-/* NOSOTROS RESOLUCION MENOR A 320px */
-@media screen and (max-width: 320px) {
-  .paddingNosotros {
-      padding-top: 130px;
-      margin-bottom: 30px;
-  }
-
-  .cardMision {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0px;
-  }
-
-  .cardVision {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      flex-wrap: nowrap;
-      align-items: center;
-      margin-bottom: 20px;
-  }
-
-  .cardValores {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: nowrap;
-      align-items: center;
-      margin-bottom: 20px;
-  }
-
-  .textoMision {
-      width: 300px;
-      height: 180px;
-      margin-bottom: 70px;
-      padding-top: 20px;
-  }
-
-  .textoVision {
-      width: 300px;
-      height: 190px;
-      padding-bottom: 0px;
-  }
-
-  .textoValores {
-      width: 300px;
-      height: 190px;
-      padding-bottom: 0px;
-  }
-
-  .imagenMision {
-      margin-top: 90px;
-      width: 300px;
-      height: 150px;
-      object-fit: cover;
-  }
-
-  .imagenVision {
-      width: 300px;
-      height: 150px;
-      object-fit: cover;
-      margin-top: 60px;
-  }
-  
-  .imagenValores {
-      width: 300px;
-      height: 150px;
-      object-fit: cover;
-      margin-top: 230px;
-  }
-
+.paddingsContacto .textoContactanos {
+  margin-bottom: 15px;
+  margin-left: 100px;
 }
-
-/* INDEX RESOLUCION MENOR A 768 PX */
-@media screen and (max-width: 768px) {
-    .portadaIndex {
-        min-height: 670px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        animation-name: miAnimacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 15s;
-        animation-delay: 0s;
-    }
-
-    @keyframes miAnimacion {
-        0% {
-            background-image: url(../img/novios-serpentina-2-foto.png);
-        }
-
-        20% {
-            background-image: url(../img/novios-caballos-1-foto.jpg);
-        }
-
-        40% {
-            background-image: url(../img/novios-sentados-foto.jpg);
-        }
-
-        60% {
-            background-image: url(../img/novios-pastel-foto.png);
-        }
-
-        80% {
-            background-image: url(../img/sillas-blancas-foto.jpg);
-        }
-
-        100% {
-            background-image: url(../img/novios-arbustos-foto.png);
-        }
-    }
-
-    .descripcionIndex {
-        margin-top: 20px;
-        padding-left: 24px;
-    }
-
-    .descripcionIndex h2 {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding-bottom: 10px;
-    }
-
-    .descripcionIndex h3 {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding-bottom: 10px;
-    }
-
-    .descripcionIndex p {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-bottom: 10px;
-        padding-left: 15px;
-        padding-right: 10px;
-    }
-
-    .imagenesAbajoIndex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 24px;
-        flex-wrap: wrap;
-    }
-
-    .fotoIndex1 {
-        width: 720px;
-        height: 600px;
-        padding-top: 10px;
-        object-fit: cover;
-    }
-
-    .fotoIndex2 {
-        width: 720px;
-        height: 600px;
-        padding-top: 10px;
-        object-fit: cover;
-    }
-
-    .fotoIndex3 {
-        width: 720px;
-        height: 600px;
-        padding-top: 10px;
-        object-fit: cover;
-    }
+.paddingsContacto .inputNombre {
+  width: 350px;
+  margin-bottom: 10px;
 }
-
-/* INDEX RESOLUCION MENOR A 320PX*/
-@media screen and (max-width: 320px) {
-    .portadaIndex {
-        height: 200px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding-left: 40px;
-        animation-name: miAnimacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 15s;
-        animation-delay: 0s;
-    }
-
-    @keyframes miAnimacion {
-        0% {
-            background-image: url(../img/novios-serpentina-2-foto.png);
-        }
-
-        20% {
-            background-image: url(../img/novios-caballos-1-foto.jpg);
-        }
-
-        40% {
-            background-image: url(../img/novios-sentados-foto.jpg);
-        }
-
-        60% {
-            background-image: url(../img/novios-pastel-foto.png);
-        }
-
-        80% {
-            background-image: url(../img/sillas-blancas-foto.jpg);
-        }
-
-        100% {
-            background-image: url(../img/novios-arbustos-foto.png);
-        }
-    }
-
-    .descripcionIndex {
-        margin-top: 20px;
-        padding-left: 24px;
-    }
-
-    .descripcionIndex h2 {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding-bottom: 10px;
-    }
-
-    .descripcionIndex h3 {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding-bottom: 10px;
-    }
-
-    .descripcionIndex p {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-bottom: 10px;
-        padding-left: 0;
-    }
-
-    .imagenesAbajoIndex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 25px;
-        flex-wrap: wrap;
-    }
-
-    .fotoIndex1 {
-        width: 300px;
-        height: 250px;
-        padding-top: 10px;
-        padding-right: 24px;
-        object-fit: cover;
-    }
-
-    .fotoIndex2 {
-        width: 300px;
-        height: 250px;
-        padding-top: 10px;
-        padding-right: 24px;
-        object-fit: cover;
-    }
-
-    .fotoIndex3 {
-        width: 300px;
-        height: 250px;
-        padding-top: 10px;
-        padding-right: 24px;
-        object-fit: cover;
-    }
+.paddingsContacto .inputApellido {
+  width: 350px;
+  margin-bottom: 10px;
 }
-
-
-/* FOOTER RESOLUCION MENOR A 768px */
-@media screen and (max-width: 768px) {
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-        align-items: flex-start;
-    }
-
-    footer img {
-        width: 50px;
-    }
-
-    .rrss {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        margin-right: 32px;
-    }
-
-    .icono {
-        width: 25px;
-    }
-
-    .mediosContacto {
-        padding-left: 20px;
-    }
+.paddingsContacto .inputTelefono {
+  width: 350px;
+  margin-bottom: 10px;
 }
-
-/* FOOTER RESOLUCION MENOR A 320px */
-@media screen and (max-width: 320px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding-bottom: 30px;
-    }
-
-    footer img {
-        width: 50px;
-        padding-top: 20px;
-    }
-
-    ul .rrss {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-left: 50px;
-    }
-
-    .icono {
-        width: 25px;
-    }
-
-    .mediosContacto {
-        padding-left: 0px;
-    }
+.paddingsContacto .inputCorreo {
+  width: 360px;
+  margin-bottom: 10px;
+}
+.paddingsContacto .inputComentarios {
+  width: 420px;
+  margin-bottom: 10px;
+}
+.paddingsContacto .botonesForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 115px;
 }
 
 /* CONTACTO RESOLUCION MENOR A 768PX */
 @media screen and (max-width: 768px) {
-    .textoContactanos {
-        margin-bottom: 15px;
-        margin-left: 100px;
-    }
-
-    .paddingsContacto {
-        margin-left: 170px;
-        padding-top: 150px;
-        padding-bottom: 40px;
-    }
-
-    .inputNombre {
-        width: 350px;
-        margin-bottom: 10px;
-    }
-
-    .inputApellido {
-        width: 350px;
-        margin-bottom: 10px;
-    }
-
-    .inputTelefono {
-        width: 350px;
-        margin-bottom: 10px;
-    }
-
-    .inputCorreo {
-        width: 360px;
-        margin-bottom: 10px;
-    }
-
-    .inputComentarios {
-        width: 425px;
-        margin-bottom: 10px;
-    }
-
-    .botonesForm {
-        padding-right: 0px;
-        margin-left: 100px;
-    }
+  .paddingsContacto {
+    margin-left: 170px;
+    padding-top: 150px;
+    padding-bottom: 40px;
+  }
+  .paddingsContacto .textoContactanos {
+    margin-bottom: 15px;
+    margin-left: 100px;
+  }
+  .paddingsContacto .inputNombre {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputApellido {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputTelefono {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputCorreo {
+    width: 360px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputComentarios {
+    width: 425px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .botonesForm {
+    padding-right: 0px;
+    margin-left: 100px;
+  }
 }
-
 /* CONTACTO RESOLUCION MENOR A 320PX */
 @media screen and (max-width: 320px) {
-    .textoContactanos {
-        margin-bottom: 15px;
-        margin-left: 20px;
-    }
-
-    .paddingsContacto {
-        margin-left: 20px;
-        padding-top: 140px;
-        padding-bottom: 40px;
-    }
-
-    .inputNombre {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .inputApellido {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .inputTelefono {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .inputCorreo {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .inputComentarios {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .botonesForm {
-        margin-right: 0px;
-        margin-left: 110px;
-    }
-}
-
-/* NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
-@media screen and (max-width: 768px) {
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-      margin-right: 20px;
+  .paddingsContacto {
+    margin-left: 20px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+  .paddingsContacto .textoContactanos {
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  .paddingsContacto .inputNombre {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputApellido {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputTelefono {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputCorreo {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .inputComentarios {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .paddingsContacto .botonesForm {
+    margin-right: 0px;
+    margin-left: 110px;
   }
 }
 
-  /* NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 320PX */
-  @media screen and (max-width: 320px) {
-      button,
-      input,
-      optgroup,
-      select,
-      textarea {
-          margin-right: 10px;
-      }
-  
-      .navbar-logo img {
-          width: 150px;
-          height: 100px;
-          object-fit: cover;
-          margin-left: 5px;
-      }
-    }
+/*# sourceMappingURL=style.css.map */

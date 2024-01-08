@@ -1,0 +1,126 @@
+/* CONTACTO */
+.paddingsContacto {
+    margin-left: 400px;
+    @include paddingstb(150px, 40px);
+
+    .textoContactanos {
+        margin-bottom: 15px;
+        margin-left: 100px;
+    }
+
+    .inputNombre {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .inputApellido {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .inputTelefono {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .inputCorreo {
+        width: 360px;
+        margin-bottom: 10px;
+    }
+
+    .inputComentarios {
+        width: 420px;
+        margin-bottom: 10px;
+    }
+
+    .botonesForm {
+        @include flex(row, wrap);
+        padding-right: 115px;
+    }
+}
+
+/* CONTACTO RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .paddingsContacto {
+        margin-left: 170px;
+        @include paddingstb(150px, 40px);
+
+        .textoContactanos {
+            margin-bottom: 15px;
+            margin-left: 100px;
+        }
+
+        .inputNombre {
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .inputApellido {
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .inputTelefono {
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .inputCorreo {
+            width: 360px;
+            margin-bottom: 10px;
+        }
+
+        .inputComentarios {
+            width: 425px;
+            margin-bottom: 10px;
+        }
+
+        .botonesForm {
+            padding-right: 0px;
+            margin-left: 100px;
+        }
+    }
+}
+
+/* CONTACTO RESOLUCION MENOR A 320PX */
+@media screen and (max-width: 320px) {
+    .paddingsContacto {
+        margin-left: 20px;
+        @include paddingstb(140px, 40px);
+
+        .textoContactanos {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+
+        .inputNombre {
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        .inputApellido {
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        .inputTelefono {
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        .inputCorreo {
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        .inputComentarios {
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        .botonesForm {
+            margin-right: 0px;
+            margin-left: 110px;
+        }
+    }
+}

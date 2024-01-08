@@ -1,0 +1,9 @@
+/* MAIN */
+main {
+    background-color: $color-fondo;
+    color: $color-secundario;
+}
+
+.paddings {
+    @include paddingstb (115px, 30px)
+}

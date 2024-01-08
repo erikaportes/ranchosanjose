@@ -1,0 +1,34 @@
+/* RESET - ESTILOS GLOBALES*/
+body {
+    font-family: $font-family;
+    background-color: $color-fondo;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h1 {
+        font-size: xx-large;
+    }
+    
+    h2 {
+        font-size: x-large;
+    }
+    
+    h3 {
+        font-size: large;
+    }
+    
+    p {
+        font-size: medium;
+    }
+}

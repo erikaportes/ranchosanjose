@@ -1,0 +1,34 @@
+// MIXINS
+@mixin medidas ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin paddingslr ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin paddingstb ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin marginslr ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin marginstb ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin flex ($direccion, $wrap) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: $wrap;
+}
