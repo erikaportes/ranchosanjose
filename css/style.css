@@ -156,17 +156,6 @@ footer img:hover {
   height: 65px;
 }
 
-/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
-@media screen and (max-width: 768px) {
-  .ubicacion {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .rrss {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
 /* INDEX */
 .portadaIndex {
   height: 670px;
