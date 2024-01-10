@@ -67,18 +67,21 @@
 
         .fotoIndex1 {
             @include medidas(390px, 300px);
+            border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex2 {
             @include medidas(390px, 300px);
+            border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex3 {
             @include medidas(390px, 300px);
+            border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;
         }

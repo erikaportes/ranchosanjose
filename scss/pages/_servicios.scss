@@ -21,6 +21,7 @@
 
         .imagenServicios {
             @include medidas(550px, 330px);
+            border-radius: 10%;
             margin-top: 20px;
             object-fit: cover;
             transition: transform 2s;

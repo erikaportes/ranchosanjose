@@ -26,6 +26,7 @@
 
         .imagenMision {
             @include medidas(550px, 250px);
+            border-radius: 10%;
             object-fit: cover;
             transition: transform 2s;
 
@@ -44,6 +45,7 @@
 
         .imagenVision {
             @include medidas(550px, 250px);
+            border-radius: 10%;
             object-fit: cover;
             transition: transform 2s;
 
@@ -81,6 +83,7 @@
 
         .imagenValores {
             @include medidas(550px, 250px);
+            border-radius: 10%;
             object-fit: cover;
             transition: transform 2s;
 

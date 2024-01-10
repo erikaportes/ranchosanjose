@@ -220,18 +220,21 @@ footer img:hover {
 .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
   width: 390px;
   height: 300px;
+  border-radius: 10%;
   margin-top: 15px;
   object-fit: cover;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
   width: 390px;
   height: 300px;
+  border-radius: 10%;
   margin-top: 15px;
   object-fit: cover;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
   width: 390px;
   height: 300px;
+  border-radius: 10%;
   margin-top: 15px;
   object-fit: cover;
 }
@@ -258,6 +261,7 @@ footer img:hover {
 .mainServicios .portadaServicios .imagenServicios {
   width: 550px;
   height: 330px;
+  border-radius: 10%;
   margin-top: 20px;
   object-fit: cover;
   transition: transform 2s;
@@ -309,6 +313,7 @@ footer img:hover {
 .paddingNosotros .cardMision .imagenMision {
   width: 550px;
   height: 250px;
+  border-radius: 10%;
   object-fit: cover;
   transition: transform 2s;
 }
@@ -325,6 +330,7 @@ footer img:hover {
 .paddingNosotros .cardVision .imagenVision {
   width: 550px;
   height: 250px;
+  border-radius: 10%;
   object-fit: cover;
   transition: transform 2s;
 }
@@ -358,6 +364,7 @@ footer img:hover {
 .paddingNosotros .cardValores .imagenValores {
   width: 550px;
   height: 250px;
+  border-radius: 10%;
   object-fit: cover;
   transition: transform 2s;
 }
@@ -389,6 +396,7 @@ footer img:hover {
 .blog .cardBlog .imagenBlog {
   width: 320px;
   height: 250px;
+  border-radius: 10%;
   object-fit: cover;
 }
 
@@ -606,7 +614,7 @@ footer img:hover {
   }
   .mainServicios .portadaServicios .imagenServicios {
     width: 700px;
-    height: 400px;
+    height: 450px;
     margin-top: 20px;
     object-fit: cover;
     transition: transform 2s;
@@ -695,7 +703,7 @@ footer img:hover {
   }
 }
 /* NOSOTROS RESOLUCION MENOR A 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1120px) {
   .paddingNosotros {
     padding-top: 30px;
     margin-bottom: 30px;
@@ -837,7 +845,6 @@ footer img:hover {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 0px;
     padding-bottom: 10px;
   }
   .blog .cardBlog {
@@ -847,33 +854,19 @@ footer img:hover {
   }
   .blog .cardBlog .imagenBlog {
     width: 700px;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
   }
 }
 /* BLOG RESOLUCION MENOR A 768px */
 @media screen and (max-width: 768px) {
-  .blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 105px;
-    padding-bottom: 0;
-    margin: 20px;
-    padding-top: 0px;
-  }
   .blog .cardBlog {
     width: 300px;
     height: auto;
-    margin: 20px;
   }
   .blog .cardBlog .imagenBlog {
     width: 300px;
-    height: 150px;
-    object-fit: cover;
+    height: 190px;
   }
 }
 /* CONTACTO RESOLUCION MENOR A 1024PX */
