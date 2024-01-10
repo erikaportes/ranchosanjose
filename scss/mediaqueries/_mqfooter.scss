@@ -1,0 +1,10 @@
+/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .ubicacion {
+        @include marginstb(15px, 15px);
+    }
+
+    .rrss {
+    @include marginstb(15px, 15px);
+    }
+}

@@ -7,6 +7,13 @@
   align-items: center;
 }
 
+.descripcionIndex p, .descripcionIndex h3, .descripcionIndex h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
 /* RESET - ESTILOS GLOBALES*/
 body {
   font-family: "Merienda", cursive;
@@ -156,17 +163,6 @@ footer img:hover {
   height: 65px;
 }
 
-/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
-@media screen and (max-width: 768px) {
-  .ubicacion {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .rrss {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
 /* INDEX */
 .portadaIndex {
   height: 670px;
@@ -209,26 +205,8 @@ footer img:hover {
 }
 .descripcionIndex {
   margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.descripcionIndex h2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 10px;
-}
-.descripcionIndex h3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 10px;
-}
-.descripcionIndex p {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .descripcionIndex .imagenesAbajoIndex {
   display: flex;
@@ -513,23 +491,7 @@ footer img:hover {
       background-image: url(../img/novios-arbustos-foto.png);
     }
   }
-  .descripcionIndex h2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
-  }
-  .descripcionIndex h3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
-  }
   .descripcionIndex p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 10px;
   }
@@ -593,24 +555,6 @@ footer img:hover {
     100% {
       background-image: url(../img/novios-arbustos-foto.png);
     }
-  }
-  .descripcionIndex h2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-bottom: 10px;
-  }
-  .descripcionIndex h3 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-bottom: 10px;
-  }
-  .descripcionIndex p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
   }
   .descripcionIndex .imagenesAbajoIndex {
     display: flex;
@@ -1029,6 +973,43 @@ footer img:hover {
   .paddingsContacto .inputComentarios {
     width: 300px;
     margin-bottom: 10px;
+  }
+}
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 1024PX */
+@media screen and (max-width: 1024px) {
+  .navbar-logo img {
+    margin-left: 20px;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin-right: 20px;
+  }
+}
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+  .navbar-logo img {
+    margin-left: 5px;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin-right: 10px;
+  }
+}
+/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+  .ubicacion {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .rrss {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
