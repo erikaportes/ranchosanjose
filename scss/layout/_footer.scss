@@ -12,6 +12,20 @@ footer {
     align-items: center;
     align-content: center;
 
+    .medioscontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 
     .ubicacion {
         display: flex;
@@ -20,6 +34,13 @@ footer {
         align-items: flex-start;
         align-content: center;
         flex-wrap: wrap;
+    }
+
+    .rrss {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .icono {
@@ -34,5 +55,16 @@ footer {
         &:hover {
             @include medidas (65px, 65px);
         }
+    }
+}
+
+/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .ubicacion {
+        @include marginstb(10px, 10px);
+    }
+
+    .rrss {
+    @include marginstb(10px, 10px);
     }
 }

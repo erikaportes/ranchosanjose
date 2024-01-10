@@ -116,6 +116,19 @@ footer {
   align-items: center;
   align-content: center;
 }
+footer .medioscontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+footer dl, footer ol, footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 footer .ubicacion {
   display: flex;
   flex-direction: row;
@@ -123,6 +136,12 @@ footer .ubicacion {
   align-items: flex-start;
   align-content: center;
   flex-wrap: wrap;
+}
+footer .rrss {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 footer .icono {
   width: 25px;
@@ -137,6 +156,17 @@ footer img:hover {
   height: 65px;
 }
 
+/* FOOTER (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+  .ubicacion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .rrss {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 /* INDEX */
 .portadaIndex {
   height: 670px;
