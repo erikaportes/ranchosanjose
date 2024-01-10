@@ -1,6 +1,7 @@
 // VARIABLES
 @import "abstracts/vars";
 @import "abstracts/mixins";
+@import "abstracts/extends";
 
 // BASE
 @import "base/reset";
@@ -20,3 +21,10 @@
 @import "pages/nosotros";
 @import "pages/blog";
 @import "pages/contacto";
+
+// MEDIA QUERIES
+@import "mediaqueries/mqindex.scss";
+@import "mediaqueries/mqservicios.scss";
+@import "mediaqueries/mqnosotros.scss";
+@import "mediaqueries/mqblog.scss";
+@import "mediaqueries/mqcontacto.scss";

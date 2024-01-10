@@ -1,35 +1,23 @@
 /* BUTTON */
 .button {
   @include flex(row, wrap);
-    margin-left: 500px;
-    color: $color-secundario;
-    background-color: $color-claro;
-    border: $borde-clasico;
-    border-radius: 15%;
-    width: 200px;
-    height: 30px;
-  }
-
-  /* RESOLUCION MENOR A 320 PX */
-  @media screen and (max-width: 320px) {
-    .button {
-        margin-left: 35px;
-      }
-  }
-
-  /* WHATSAPP */
-  .whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 80px;
-    transition: height 3s width 3s;
-
-    &:hover {
-        width: 120px;
-        height: 120px;
-    }
+  color: $color-secundario;
+  background-color: $color-claro;
+  border: $borde-clasico;
+  border-radius: 15%;
+  @include medidas(200px, 30px);
 }
 
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 80px;
+  transition: height 3s width 3s;
 
-
+  &:hover {
+    width: 120px;
+    height: 120px;
+  }
+}

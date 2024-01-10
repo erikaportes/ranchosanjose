@@ -1,0 +1,112 @@
+/* NOSOTROS RESOLUCION MENOR A 1024px */
+@media screen and (max-width: 1024px) {
+    .paddingNosotros {
+        padding-top: 30px;
+        margin-bottom: 30px;
+
+        .cardMision {
+            @include flex(column, nowrap);
+            margin-bottom: 20px;
+
+            .textoMision {
+                @include medidas(700px, 180px);
+                padding-bottom: 0px;
+                margin-bottom: 20px;
+            }
+
+            .imagenMision {
+                @include medidas(700px, 350px);
+                object-fit: cover;
+            }
+        }
+
+        .cardVision {
+            @include flex(column-reverse, nowrap);
+            margin-bottom: 20px;
+
+            .imagenVision {
+                @include medidas(700px, 350px);
+                object-fit: cover;
+            }
+
+            .textoVision {
+                @include medidas(700px, 190px);
+                padding-bottom: 0px;
+            }
+        }
+
+        .cardValores {
+            @include flex(column, nowrap);
+            margin-bottom: 20px;
+
+            .textoValores {
+                @include medidas(700px, 190px);
+                margin: 20px;
+
+            }
+
+            .imagenValores {
+                @include medidas(700px, 350px);
+                object-fit: cover;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+/* NOSOTROS RESOLUCION MENOR A 768px */
+@media screen and (max-width: 768px) {
+    .paddingNosotros {
+        padding-top: 30px;
+        margin-bottom: 30px;
+
+        .cardMision {
+            @include flex(column, wrap);
+            margin-bottom: 0px;
+
+            .textoMision {
+                @include medidas(300px, 180px);
+                margin-bottom: 70px;
+                padding-top: 10px;
+            }
+
+            .imagenMision {
+                margin-top: 90px;
+                @include medidas(300px, 150px);
+                object-fit: cover;
+            }
+        }
+
+        .cardVision {
+            @include flex(column-reverse, nowrap);
+            margin-bottom: 20px;
+
+            .textoVision {
+                @include medidas(300px, 190px);
+                padding-bottom: 0px;
+            }
+
+            .imagenVision {
+                @include medidas(300px, 150px);
+                object-fit: cover;
+                margin-top: 60px;
+            }
+        }
+
+        .cardValores {
+            @include flex(column, nowrap);
+            margin-bottom: 20px;
+
+            .textoValores {
+                @include medidas(300px, 190px);
+                padding-bottom: 0px;
+            }
+
+            .imagenValores {
+                @include medidas(300px, 150px);
+                object-fit: cover;
+                margin-top: 160px;
+            }
+        }
+    }
+}

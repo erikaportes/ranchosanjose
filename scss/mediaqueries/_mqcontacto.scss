@@ -1,0 +1,98 @@
+/* CONTACTO RESOLUCION MENOR A 1024PX */
+@media screen and (max-width: 1024px) {
+    .paddingsContacto {
+        @include paddingstb(150px, 40px);
+
+        .nombre {
+            @include flexInput(row);
+        }
+
+        .inputNombre {
+            width: 390px;
+        }
+
+        .apellido {
+            @include flexInput(row);
+        }
+
+        .inputApellido {
+            width: 390px;
+        }
+
+        .telefono {
+            @include flexInput(row);
+        }
+
+        .inputTelefono {
+            width: 390px;
+        }
+
+        .correo {
+            @include flexInput(row);
+        }
+
+        .inputCorreo {
+            width: 400px;
+        }
+
+        .comentarios {
+            @include flexInput(column);
+        }
+
+        .inputComentarios {
+            width: 460px;
+        }
+    }
+}
+
+/* CONTACTO RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .paddingsContacto {
+        @include paddingstb(140px, 40px);
+
+        .nombre {
+            @include flexInput(column);
+        }
+
+        .inputNombre {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .apellido {
+            @include flexInput(column);
+        }
+
+        .inputApellido {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .telefono {
+            @include flexInput(column);
+        }
+
+        .inputTelefono {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .correo {
+            @include flexInput(column);
+        }
+
+        .inputCorreo {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .comentarios {
+            @include flexInput(column);
+        }
+
+        .inputComentarios {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+    }
+}

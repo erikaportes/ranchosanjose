@@ -6,7 +6,7 @@
     @include marginslr(30px, 30px);
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 1fr 550px;
+    grid-template-columns: 550px 1fr;
     grid-template-rows: 150px 150px 1fr;
     grid-template-areas:
         "portadaServicios explicacionServicios"
@@ -39,7 +39,7 @@
     .listaServicios {
         grid-area: listaServicios;
         margin-top: 40px;
-        list-style-type: circle;
+        padding-left: 0;
     }
 
     .pideCotiz {
@@ -51,109 +51,3 @@
     }
 }
 
-/* SERVICIOS RESOLUCION MENOR A 768px */
-@media screen and (max-width: 768px) {
-    .mainServicios {
-        padding-top: 140px;
-        row-gap: 50px;
-        column-gap: 30px;
-        @include marginslr(40px, 35px);
-        margin-bottom: 30px;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 140px 150px 0px;
-        grid-template-areas:
-            "portadaServicios"
-            "explicacionServicios"
-            "listaServicios"
-            "pideCotiz";
-        justify-content: space-around;
-
-        .portadaServicios {
-            grid-area: portadaServicios;
-            padding-bottom: 10px;
-            width: 700px;
-
-            .imagenServicios {
-                @include medidas(700px, 400px);
-                margin-top: 20px;
-                object-fit: cover;
-                transition: transform 2s;
-
-                &:hover {
-                    transform: rotatey(360deg);
-                }
-            }
-        }
-
-        .explicacionServicios {
-            grid-area: explicacionServicios;
-            font-size: x-large;
-        }
-
-        .listaServicios {
-            grid-area: listaServicios;
-            margin-top: 40px;
-        }
-
-        .pideCotiz {
-            grid-area: pideCotiz;
-            @include flex(row, wrap);
-            margin-top: 40px;
-            color: black;
-        }
-    }
-}
-
-/* SERVICIOS RESOLUCION MENOR A 320px */
-@media screen and (max-width: 320px) {
-    .mainServicios {
-        padding-top: 140px;
-        row-gap: 50px;
-        column-gap: 30px;
-        @include marginstb(0, 0);
-        @include marginslr(30px, 30px);
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 320px 240px 120px 1fr;
-        grid-template-areas:
-            "portadaServicios"
-            "explicacionServicios"
-            "listaServicios"
-            "pideCotiz";
-        justify-content: space-around;
-
-        .portadaServicios {
-            grid-area: portadaServicios;
-            padding-bottom: 10px;
-            width: 300px;
-
-            .imagenServicios {
-                @include medidas(300px, 200px);
-                margin-top: 15px;
-                object-fit: cover;
-                transition: transform 2s;
-
-                &:hover {
-                    transform: rotatey(360deg);
-                }
-            }
-        }
-
-        .explicacionServicios {
-            grid-area: explicacionServicios;
-            font-size: large;
-        }
-
-        .listaServicios {
-            grid-area: listaServicios;
-            margin-top: 30px;
-        }
-
-        .pideCotiz {
-            grid-area: pideCotiz;
-            @include flex(row, wrap);
-            margin-top: 30px;
-        }
-    }
-}

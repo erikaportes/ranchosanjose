@@ -1,12 +1,17 @@
 /* BLOG */
+.h1Blog {
+    @extend %flex;
+    padding-top: 150px;
+}
+
 .blog {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
-    @include paddingstb(110px, 10px);
+    @include paddingstb(0px, 10px);
     margin: 20px;
 
     .cardBlog {
@@ -16,42 +21,6 @@
         .imagenBlog {
             @include medidas(320px, 250px);
             object-fit: cover;
-        }
-    }
-}
-
-/* BLOG RESOLUCION MENOR A 768px */
-@media screen and (max-width: 768px) {
-    .blog {
-        @include flex(column, wrap);
-
-        .cardBlog {
-            @include medidas(700px, auto);
-            margin: 20px;
-
-            .imagenBlog {
-                @include medidas(700px, 300px);
-                object-fit: cover;
-            }
-        }
-    }
-}
-
-/* BLOG RESOLUCION MENOR A 320px */
-@media screen and (max-width: 320px) {
-    .blog {
-        @include flex(column, wrap);
-        @include paddingstb(105px, 0);
-        margin: 20px;
-
-        .cardBlog {
-            @include medidas(300px, auto);
-            margin: 20px;
-
-            .imagenBlog {
-                @include medidas(300px, 150px);
-                object-fit: cover;
-            }
         }
     }
 }

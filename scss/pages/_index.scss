@@ -42,252 +42,54 @@
 
 .descripcionIndex {
     margin-top: 20px;
+    @include paddingslr(15px, 10px);
 
     h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         padding-bottom: 10px;
     }
 
     h3 {
         display: flex;
-        align-items: center;
         flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         padding-bottom: 10px;
     }
 
     .imagenesAbajoIndex {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
         padding-bottom: 25px;
 
         .fotoIndex1 {
             @include medidas(390px, 300px);
-            padding-top: 10px;
+            margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex2 {
             @include medidas(390px, 300px);
-            padding-top: 10px;
+            margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex3 {
             @include medidas(390px, 300px);
-            padding-top: 10px;
+            margin-top: 15px;
             object-fit: cover;
-        }
-    }
-
-    .button {
-        @include flex(row, wrap);
-        margin-left: 500px;
-        color: $color-secundario;
-        background-color: $color-claro;
-        border: $borde-clasico;
-        border-radius: 15%;
-        @include medidas(200px, 30px);
-    }
-}
-
-
-
-/* INDEX RESOLUCION MENOR A 768 PX */
-@media screen and (max-width: 768px) {
-    .portadaIndex {
-        min-height: 670px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: white;
-        @include flex(column, wrap);
-        animation-name: miAnimacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 15s;
-        animation-delay: 0s;
-
-        @keyframes miAnimacion {
-            0% {
-                background-image: url(../img/novios-serpentina-2-foto.png);
-            }
-
-            20% {
-                background-image: url(../img/novios-caballos-1-foto.jpg);
-            }
-
-            40% {
-                background-image: url(../img/novios-sentados-foto.jpg);
-            }
-
-            60% {
-                background-image: url(../img/novios-pastel-foto.png);
-            }
-
-            80% {
-                background-image: url(../img/sillas-blancas-foto.jpg);
-            }
-
-            100% {
-                background-image: url(../img/novios-arbustos-foto.png);
-            }
-        }
-    }
-
-    .descripcionIndex {
-        margin-top: 20px;
-        padding-left: 24px;
-
-        h2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 10px;
-        }
-
-        p {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 10px;
-            @include paddingslr(0px, 10px);
-        }
-
-        .imagenesAbajoIndex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-bottom: 24px;
-            flex-wrap: wrap;
-
-            .fotoIndex1 {
-                @include medidas(720px, 600px);
-                padding-top: 10px;
-                object-fit: cover;
-            }
-
-            .fotoIndex2 {
-                @include medidas(720px, 600px);
-                padding-top: 10px;
-                object-fit: cover;
-            }
-
-            .fotoIndex3 {
-                @include medidas(720px, 600px);
-                padding-top: 10px;
-                object-fit: cover;
-            }
-        }
-    }
-}
-
-/* INDEX RESOLUCION MENOR A 320PX*/
-@media screen and (max-width: 320px) {
-    .portadaIndex {
-        height: 200px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: white;
-        @include flex(column, wrap);
-        padding-left: 40px;
-        animation-name: miAnimacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 15s;
-        animation-delay: 0s;
-
-        @keyframes miAnimacion {
-            0% {
-                background-image: url(../img/novios-serpentina-2-foto.png);
-            }
-
-            20% {
-                background-image: url(../img/novios-caballos-1-foto.jpg);
-            }
-
-            40% {
-                background-image: url(../img/novios-sentados-foto.jpg);
-            }
-
-            60% {
-                background-image: url(../img/novios-pastel-foto.png);
-            }
-
-            80% {
-                background-image: url(../img/sillas-blancas-foto.jpg);
-            }
-
-            100% {
-                background-image: url(../img/novios-arbustos-foto.png);
-            }
-        }
-    }
-
-    .descripcionIndex {
-        margin-top: 20px;
-        padding-left: 24px;
-
-        h2 {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            padding-bottom: 10px;
-        }
-
-        p {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 10px;
-            padding-left: 0;
-        }
-
-        .imagenesAbajoIndex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-bottom: 25px;
-            flex-wrap: wrap;
-
-            .fotoIndex1 {
-                @include medidas(300px, 250px);
-                padding-top: 10px;
-                padding-right: 24px;
-                object-fit: cover;
-            }
-
-            .fotoIndex2 {
-                @include medidas(300px, 250px);
-                padding-top: 10px;
-                padding-right: 24px;
-                object-fit: cover;
-            }
-
-            .fotoIndex3 {
-                @include medidas(300px, 250px);
-                padding-top: 10px;
-                padding-right: 24px;
-                object-fit: cover;
-            }
-        }
-
-        .button {
-            margin-left: 35px;
         }
     }
 }

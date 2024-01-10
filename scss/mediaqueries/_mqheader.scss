@@ -1,0 +1,29 @@
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 1024PX */
+@media screen and (max-width: 1024px) {
+    .navbar-logo img {
+        margin-left: 20px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin-right: 20px;
+    }
+}
+
+/* HEADER/NAV (TOGGLER Y LOGO) RESOLUCION MENOR A 768PX */
+@media screen and (max-width: 768px) {
+    .navbar-logo img {
+        margin-left: 5px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin-right: 10px;
+    }
+}

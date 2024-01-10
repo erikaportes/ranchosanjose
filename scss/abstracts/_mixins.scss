@@ -32,3 +32,9 @@
     align-items: center;
     flex-wrap: $wrap;
 }
+
+@mixin flexInput ($direccion) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: flex-start;
+}

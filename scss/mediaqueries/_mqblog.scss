@@ -1,0 +1,37 @@
+/* BLOG RESOLUCION MENOR A 1024px */
+@media screen and (max-width: 1024px) {
+    .blog {
+        @include flex(column, wrap);
+        @include paddingstb(0px, 10px);
+
+        .cardBlog {
+            @include medidas(700px, auto);
+            margin: 20px;
+
+            .imagenBlog {
+                @include medidas(700px, 300px);
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* BLOG RESOLUCION MENOR A 768px */
+@media screen and (max-width: 768px) {
+    .blog {
+        @include flex(column, wrap);
+        @include paddingstb(105px, 0);
+        margin: 20px;
+        padding-top: 0px;
+
+        .cardBlog {
+            @include medidas(300px, auto);
+            margin: 20px;
+
+            .imagenBlog {
+                @include medidas(300px, 150px);
+                object-fit: cover;
+            }
+        }
+    }
+}
