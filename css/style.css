@@ -209,7 +209,7 @@ footer img:hover {
 }
 .descripcionIndex {
   margin-top: 20px;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 10px;
 }
 .descripcionIndex h2 {
@@ -624,21 +624,18 @@ footer img:hover {
     width: 300px;
     height: 250px;
     padding-top: 10px;
-    padding-right: 24px;
     object-fit: cover;
   }
   .descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
     width: 300px;
     height: 250px;
     padding-top: 10px;
-    padding-right: 24px;
     object-fit: cover;
   }
   .descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
     width: 300px;
     height: 250px;
     padding-top: 10px;
-    padding-right: 24px;
     object-fit: cover;
   }
 }

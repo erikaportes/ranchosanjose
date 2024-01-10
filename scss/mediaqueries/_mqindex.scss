@@ -164,21 +164,18 @@
             .fotoIndex1 {
                 @include medidas(300px, 250px);
                 padding-top: 10px;
-                padding-right: 24px;
                 object-fit: cover;
             }
 
             .fotoIndex2 {
                 @include medidas(300px, 250px);
                 padding-top: 10px;
-                padding-right: 24px;
                 object-fit: cover;
             }
 
             .fotoIndex3 {
                 @include medidas(300px, 250px);
                 padding-top: 10px;
-                padding-right: 24px;
                 object-fit: cover;
             }
         }
