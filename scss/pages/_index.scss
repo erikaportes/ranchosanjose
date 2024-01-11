@@ -60,27 +60,27 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         align-content: center;
         padding-bottom: 25px;
 
         .fotoIndex1 {
-            @include medidas(390px, 300px);
+            @include medidas(385px, 300px);
             border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex2 {
-            @include medidas(390px, 300px);
+            @include medidas(385px, 300px);
             border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;
         }
 
         .fotoIndex3 {
-            @include medidas(390px, 300px);
+            @include medidas(385px, 300px);
             border-radius: 10%;
             margin-top: 15px;
             object-fit: cover;

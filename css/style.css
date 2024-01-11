@@ -212,27 +212,27 @@ footer img:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   padding-bottom: 25px;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
-  width: 390px;
+  width: 385px;
   height: 300px;
   border-radius: 10%;
   margin-top: 15px;
   object-fit: cover;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex2 {
-  width: 390px;
+  width: 385px;
   height: 300px;
   border-radius: 10%;
   margin-top: 15px;
   object-fit: cover;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex3 {
-  width: 390px;
+  width: 385px;
   height: 300px;
   border-radius: 10%;
   margin-top: 15px;
@@ -504,9 +504,6 @@ footer img:hover {
     padding-right: 10px;
   }
   .descripcionIndex .imagenesAbajoIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     padding-bottom: 25px;
     flex-wrap: wrap;
   }
@@ -565,11 +562,6 @@ footer img:hover {
     }
   }
   .descripcionIndex .imagenesAbajoIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: center;
     margin-bottom: 24px;
   }
   .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {

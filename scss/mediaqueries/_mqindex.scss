@@ -55,9 +55,6 @@
         }
 
         .imagenesAbajoIndex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
             padding-bottom: 25px;
             flex-wrap: wrap;
 
@@ -124,11 +121,6 @@
 
     .descripcionIndex {
         .imagenesAbajoIndex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            align-content: center;
             margin-bottom: 24px;
 
             .fotoIndex1 {
