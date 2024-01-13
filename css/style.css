@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros, footer .rrss, .botonIndex {
+.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros, footer .rrss, .buttonIndex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -48,14 +48,25 @@ body {
 }
 
 /* BUTTON */
-/* NO ME PERMITE CENTRARLO */
-.botonIndex {
+.buttonIndex {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.buttonIndex .botonIndex {
+  width: 195px;
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ECD8B1;
+  background-color: #1E1E1E;
+}
+.buttonIndex .botonIndex:hover {
   color: #1E1E1E;
   background-color: #ECD8B1;
-  border: 4px solid #1E1E1E;
-  border-radius: 15%;
-  width: 200px;
-  height: 30px;
+  border: solid black 2px;
+  border-radius: 10px;
 }
 
 /* WHATSAPP */
