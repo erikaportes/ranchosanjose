@@ -3,22 +3,15 @@
   @extend %flex;
   @include marginstb(15px, 15px);
 
-  .botonIndex {
-    width: 195px;
+  .buttonIndexInterior {
+    @extend %flex;
+    width: 220px;
+    padding: 10px 25px;
     font-family: $font-family;
-    font-weight: 700;
     border-radius: 10px;
-    padding: 10px 20px;
     text-decoration: none;
     color: $color-claro;
     background-color: #1E1E1E;
-  
-    &:hover {
-      color: $color-secundario;
-      background-color: $color-claro;
-      border: solid black 2px;
-      border-radius: 10px;
-    }
   }
 }
 
