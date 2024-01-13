@@ -24,13 +24,13 @@
     margin-bottom: $bottom;
 }
 
-@mixin flex ($direccion, $wrap) {
+@mixin flex ($direccion, $justify) {
     display: flex;
     flex-direction: $direccion;
-    justify-content: center;
+    justify-content: $justify;
     align-content: center;
     align-items: center;
-    flex-wrap: $wrap;
+    flex-wrap: wrap;
 }
 
 @mixin flexInput ($direccion) {

@@ -5,12 +5,7 @@ footer {
     color: $color-primario;
     font-size: small;
     @include paddingstb(20px, 20px);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+    @include flex(row, space-evenly);
 
     .medioscontacto {
         display: flex;
@@ -37,10 +32,7 @@ footer {
     }
 
     .rrss {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        @extend %flex;
     }
 
     .icono {

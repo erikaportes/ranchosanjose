@@ -1,11 +1,12 @@
 /* BUTTON */
-.button {
-  @include flex(row, wrap);
-  color: $color-secundario;
-  background-color: $color-claro;
-  border: $borde-clasico;
+.botonIndex {
+  @extend %flex;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+  border: 4px solid #1E1E1E;
   border-radius: 15%;
-  @include medidas(200px, 30px);
+  width: 200px;
+  height: 30px;
 }
 
 /* WHATSAPP */

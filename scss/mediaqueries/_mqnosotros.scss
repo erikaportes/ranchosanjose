@@ -1,11 +1,12 @@
 /* NOSOTROS RESOLUCION MENOR A 1024px */
+/* NOTA: Lo dejé responsive de esa manera hasta 1120px, ya que se quebraba en un punto por el column-reverse de card Vision y se mostraban al revés */
 @media screen and (max-width: 1120px) {
     .paddingNosotros {
         padding-top: 30px;
         margin-bottom: 30px;
 
         .cardMision {
-            @include flex(column, nowrap);
+            @include flex(column, center);
             margin-bottom: 20px;
 
             .textoMision {
@@ -21,7 +22,7 @@
         }
 
         .cardVision {
-            @include flex(column-reverse, nowrap);
+            @include flex(column-reverse, center);
             margin-bottom: 20px;
 
             .imagenVision {
@@ -36,7 +37,7 @@
         }
 
         .cardValores {
-            @include flex(column, nowrap);
+            @include flex(column, center);
             margin-bottom: 20px;
 
             .textoValores {
@@ -61,7 +62,7 @@
         margin-bottom: 30px;
 
         .cardMision {
-            @include flex(column, wrap);
+            @include flex(column, center);
             margin-bottom: 0px;
 
             .textoMision {
@@ -78,7 +79,7 @@
         }
 
         .cardVision {
-            @include flex(column-reverse, nowrap);
+            @include flex(column-reverse, center);
             margin-bottom: 20px;
 
             .textoVision {
@@ -94,7 +95,7 @@
         }
 
         .cardValores {
-            @include flex(column, nowrap);
+            @include flex(column, center);
             margin-bottom: 20px;
 
             .textoValores {

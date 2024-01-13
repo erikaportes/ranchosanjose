@@ -1,4 +1,5 @@
-.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros {
+@charset "UTF-8";
+.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros, footer .rrss, .botonIndex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,13 +48,7 @@ body {
 }
 
 /* BUTTON */
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.botonIndex {
   color: #1E1E1E;
   background-color: #ECD8B1;
   border: 4px solid #1E1E1E;
@@ -118,10 +113,10 @@ footer {
   padding-bottom: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
   align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 footer .medioscontacto {
   display: flex;
@@ -143,12 +138,6 @@ footer .ubicacion {
   align-items: flex-start;
   align-content: center;
   flex-wrap: wrap;
-}
-footer .rrss {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 footer .icono {
   width: 25px;
@@ -211,10 +200,10 @@ footer img:hover {
 .descripcionIndex .imagenesAbajoIndex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 25px;
 }
 .descripcionIndex .imagenesAbajoIndex .fotoIndex1 {
@@ -249,7 +238,7 @@ footer img:hover {
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 550px 1fr;
-  grid-template-rows: 150px 150px 1fr;
+  grid-template-rows: 150px 1fr auto;
   grid-template-areas: "portadaServicios explicacionServicios" "portadaServicios listaServicios" "portadaServicios pideCotiz";
   justify-content: space-evenly;
 }
@@ -281,8 +270,11 @@ footer img:hover {
 .mainServicios .pideCotiz {
   grid-area: pideCotiz;
   display: flex;
+  flex-direction: row;
   justify-content: start;
   align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -299,6 +291,8 @@ footer img:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -324,6 +318,8 @@ footer img:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -349,6 +345,7 @@ footer img:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -380,10 +377,10 @@ footer img:hover {
 .blog {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 0px;
   padding-bottom: 10px;
   margin: 20px;
@@ -695,6 +692,7 @@ footer img:hover {
   }
 }
 /* NOSOTROS RESOLUCION MENOR A 1024px */
+/* NOTA: Lo dejé responsive de esa manera hasta 1120px, ya que se quebraba en un punto por el column-reverse de card Vision y se mostraban al revés */
 @media screen and (max-width: 1120px) {
   .paddingNosotros {
     padding-top: 30px;
@@ -706,7 +704,7 @@ footer img:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   .paddingNosotros .cardMision .textoMision {
@@ -726,7 +724,7 @@ footer img:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   .paddingNosotros .cardVision .imagenVision {
@@ -745,7 +743,7 @@ footer img:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   .paddingNosotros .cardValores .textoValores {
@@ -793,7 +791,7 @@ footer img:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   .paddingNosotros .cardVision .textoVision {
@@ -813,7 +811,7 @@ footer img:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   .paddingNosotros .cardValores .textoValores {

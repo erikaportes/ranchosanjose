@@ -1,7 +1,7 @@
 /* BLOG RESOLUCION MENOR A 1024px */
 @media screen and (max-width: 1024px) {
     .blog {
-        @include flex(column, wrap);
+        @include flex(column, center);
         padding-bottom: 10px;
 
         .cardBlog {

@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
     color: white;
-    @include flex(column, wrap);
+    @include flex(column, center);
     animation-name: miAnimacion;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -57,12 +57,7 @@
     }
 
     .imagenesAbajoIndex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
+        @include flex(row, space-around);
         padding-bottom: 25px;
 
         .fotoIndex1 {

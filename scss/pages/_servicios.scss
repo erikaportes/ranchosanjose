@@ -7,7 +7,7 @@
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 550px 1fr;
-    grid-template-rows: 150px 150px 1fr;
+    grid-template-rows: 150px 1fr auto;
     grid-template-areas:
         "portadaServicios explicacionServicios"
         "portadaServicios listaServicios"
@@ -45,9 +45,7 @@
 
     .pideCotiz {
         grid-area: pideCotiz;
-        display: flex;
-        justify-content: start;
-        align-content: center;
+        @include flex(row, start);
         margin-top: 40px;
     }
 }

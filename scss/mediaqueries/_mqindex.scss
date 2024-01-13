@@ -6,7 +6,7 @@
         background-position: center;
         background-size: cover;
         color: white;
-        @include flex(column, wrap);
+        @include flex(column, center);
         animation-name: miAnimacion;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -84,7 +84,7 @@
         background-position: center;
         background-size: cover;
         color: white;
-        @include flex(column, wrap);
+        @include flex(column, center);
         padding-left: 40px;
         animation-name: miAnimacion;
         animation-iteration-count: infinite;

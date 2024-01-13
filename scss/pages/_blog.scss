@@ -5,12 +5,7 @@
 }
 
 .blog {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+    @include flex(row, space-around);
     @include paddingstb(0px, 10px);
     margin: 20px;
 

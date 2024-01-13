@@ -1,6 +1,6 @@
 /* CONTACTO */
 .paddingsContacto {
-    @include flex(column, wrap);
+    @include flex(column, center);
     @include paddingstb(150px, 40px);
 
     .textoContactanos {
