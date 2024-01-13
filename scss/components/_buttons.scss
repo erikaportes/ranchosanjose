@@ -1,21 +1,4 @@
-/* BUTTON */
-.buttonIndex {
-  @extend %flex;
-  @include marginstb(15px, 15px);
-
-  .buttonIndexInterior {
-    @extend %flex;
-    width: 220px;
-    padding: 10px 25px;
-    font-family: $font-family;
-    border-radius: 10px;
-    text-decoration: none;
-    color: $color-claro;
-    background-color: #1E1E1E;
-  }
-}
-
-/* WHATSAPP */
+/* BUTTON WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 30px;
@@ -29,3 +12,37 @@
   }
 }
 
+/* BUTTON INDEX */
+.buttonIndex {
+  @extend %flex;
+  @include marginstb(15px, 15px);
+
+  .buttonIndexInterior {
+    @extend %flex;
+    width: 220px;
+    padding: 10px 25px;
+    font-family: $font-family;
+    border-radius: 15px;
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-secundario;
+    background-color: $color-claro;
+  }
+}
+
+/* BUTTON SERVICIOS */
+.buttonServicios {
+  @extend %flex;
+
+  .buttonServiciosInterior {
+    @extend %flex;
+    width: 220px;
+    padding: 10px 25px;
+    font-family: $font-family;
+    border-radius: 15px;
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-secundario;
+    background-color: $color-claro;
+  }
+}

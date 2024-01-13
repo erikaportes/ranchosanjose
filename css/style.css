@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros, footer .rrss, .buttonIndex .buttonIndexInterior, .buttonIndex {
+.paddingsContacto .botonesForm, .h1Blog, .h1Nosotros, footer .rrss, .buttonServicios .buttonServiciosInterior, .buttonServicios, .buttonIndex .buttonIndexInterior, .buttonIndex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,22 +47,7 @@ body {
   font-family: "Merienda", cursive;
 }
 
-/* BUTTON */
-.buttonIndex {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.buttonIndex .buttonIndexInterior {
-  width: 220px;
-  padding: 10px 25px;
-  font-family: "Merienda", cursive;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #ECD8B1;
-  background-color: #1E1E1E;
-}
-
-/* WHATSAPP */
+/* BUTTON WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 30px;
@@ -73,6 +58,34 @@ body {
 .whatsapp:hover {
   width: 120px;
   height: 120px;
+}
+
+/* BUTTON INDEX */
+.buttonIndex {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.buttonIndex .buttonIndexInterior {
+  width: 220px;
+  padding: 10px 25px;
+  font-family: "Merienda", cursive;
+  border-radius: 15px;
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+}
+
+/* BUTTON SERVICIOS */
+.buttonServicios .buttonServiciosInterior {
+  width: 220px;
+  padding: 10px 25px;
+  font-family: "Merienda", cursive;
+  border-radius: 15px;
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
 }
 
 /* HEADER/NAVBAR */
@@ -198,7 +211,7 @@ footer img:hover {
   }
 }
 .descripcionIndex {
-  margin-top: 20px;
+  margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -244,7 +257,7 @@ footer img:hover {
   display: grid;
   grid-template-columns: 550px 1fr;
   grid-template-rows: 150px 1fr auto;
-  grid-template-areas: "portadaServicios explicacionServicios" "portadaServicios listaServicios" "portadaServicios pideCotiz";
+  grid-template-areas: "portadaServicios explicacionServicios" "portadaServicios listaServicios" "portadaServicios buttonServicios";
   justify-content: space-evenly;
 }
 .mainServicios .portadaServicios {
@@ -256,7 +269,7 @@ footer img:hover {
   width: 550px;
   height: 330px;
   border-radius: 10%;
-  margin-top: 20px;
+  margin-top: 30px;
   object-fit: cover;
   transition: transform 2s;
 }
@@ -272,7 +285,7 @@ footer img:hover {
   margin-top: 40px;
   padding-left: 0;
 }
-.mainServicios .pideCotiz {
+.mainServicios .buttonServicios {
   grid-area: pideCotiz;
   display: flex;
   flex-direction: row;
@@ -586,7 +599,8 @@ footer img:hover {
   }
 }
 /* SERVICIOS RESOLUCION MENOR A 1024px */
-@media screen and (max-width: 1024px) {
+/* NOTA: LO ALARGUÉ HASTA 1148px DEBIDO A QUE EL BOTÓN YA SE ESTABA DESBORDANDO EN LA VERSIÓN DESKTOP*/
+@media screen and (max-width: 1148px) {
   .mainServicios {
     padding-top: 140px;
     row-gap: 50px;
@@ -596,8 +610,8 @@ footer img:hover {
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 140px 150px 0px;
-    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "pideCotiz";
+    grid-template-rows: 1fr 140px 190px auto;
+    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "buttonServicios";
     justify-content: space-around;
   }
   .mainServicios .portadaServicios {
@@ -629,7 +643,7 @@ footer img:hover {
     margin-top: 40px;
     padding-left: 0;
   }
-  .mainServicios .pideCotiz {
+  .mainServicios .buttonServicios {
     grid-area: pideCotiz;
     display: flex;
     flex-direction: row;
@@ -638,7 +652,6 @@ footer img:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 40px;
-    color: black;
   }
 }
 /* SERVICIOS RESOLUCION MENOR A 768px */
@@ -653,8 +666,8 @@ footer img:hover {
     margin-right: 30px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 320px 240px 120px 1fr;
-    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "pideCotiz";
+    grid-template-rows: 1fr 320px 90px auto;
+    grid-template-areas: "portadaServicios" "explicacionServicios" "listaServicios" "buttonServicios";
     justify-content: space-around;
   }
   .mainServicios .portadaServicios {
@@ -685,7 +698,7 @@ footer img:hover {
     margin-top: 30px;
     padding-left: 0;
   }
-  .mainServicios .pideCotiz {
+  .mainServicios .buttonServicios {
     grid-area: pideCotiz;
     display: flex;
     flex-direction: row;
