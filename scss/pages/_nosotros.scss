@@ -7,6 +7,7 @@
 .paddingNosotros {
     padding-top: 30px;
     margin-bottom: 30px;
+    min-height: 100vh;
 
     .cardMision {
         @include flex(row, space-evenly);

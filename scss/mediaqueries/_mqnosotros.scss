@@ -72,7 +72,7 @@
             }
 
             .imagenMision {
-                margin-top: 90px;
+                margin-top: 80px;
                 @include medidas(300px, 150px);
                 object-fit: cover;
             }
@@ -106,7 +106,7 @@
             .imagenValores {
                 @include medidas(300px, 150px);
                 object-fit: cover;
-                margin-top: 160px;
+                margin-top: 190px;
             }
         }
     }

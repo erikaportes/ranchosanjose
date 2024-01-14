@@ -351,6 +351,7 @@ footer img:hover {
 .paddingNosotros {
   padding-top: 30px;
   margin-bottom: 30px;
+  min-height: 100vh;
 }
 .paddingNosotros .cardMision {
   display: flex;
@@ -846,7 +847,7 @@ footer img:hover {
     padding-top: 10px;
   }
   .paddingNosotros .cardMision .imagenMision {
-    margin-top: 90px;
+    margin-top: 80px;
     width: 300px;
     height: 150px;
     object-fit: cover;
@@ -889,7 +890,7 @@ footer img:hover {
     width: 300px;
     height: 150px;
     object-fit: cover;
-    margin-top: 160px;
+    margin-top: 190px;
   }
 }
 /* BLOG RESOLUCION MENOR A 1024px */
