@@ -46,3 +46,28 @@
     background-color: $color-claro;
   }
 }
+
+  /* BUTTONS CONTACTO */
+  .botonesForm {
+    .botonSubmit {
+        width: 120px;
+        padding: 0px 25px;
+        font-family: $font-family;
+        border-radius: 10px;
+        border: solid black 4px;
+        text-decoration: underline;
+        color: $color-secundario;
+        background-color: $color-claro;
+    }
+    
+    .botonLimpiar {
+        width: 120px;
+        padding: 0px 25px;
+        font-family: $font-family;
+        border-radius: 10px;
+        border: solid black 4px;
+        text-decoration: underline;
+        color: $color-secundario;
+        background-color: $color-claro;
+    }
+}
