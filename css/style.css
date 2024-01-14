@@ -75,6 +75,12 @@ body {
   color: #1E1E1E;
   background-color: #ECD8B1;
 }
+.buttonIndex .buttonIndexInterior:hover {
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #BCA474;
+  background-color: #1E1E1E;
+}
 
 /* BUTTON SERVICIOS */
 .buttonServicios .buttonServiciosInterior {
@@ -86,6 +92,46 @@ body {
   text-decoration: underline;
   color: #1E1E1E;
   background-color: #ECD8B1;
+}
+.buttonServicios .buttonServiciosInterior:hover {
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #BCA474;
+  background-color: #1E1E1E;
+}
+
+/* BUTTONS CONTACTO */
+.botonesForm .botonSubmit {
+  width: 120px;
+  padding: 0px 25px;
+  font-family: "Merienda", cursive;
+  border-radius: 10px;
+  border: solid black 4px;
+  text-decoration: underline;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+}
+.botonesForm .botonSubmit:hover {
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #BCA474;
+  background-color: #1E1E1E;
+}
+.botonesForm .botonLimpiar {
+  width: 120px;
+  padding: 0px 25px;
+  font-family: "Merienda", cursive;
+  border-radius: 10px;
+  border: solid black 4px;
+  text-decoration: underline;
+  color: #1E1E1E;
+  background-color: #ECD8B1;
+}
+.botonesForm .botonLimpiar:hover {
+  border: #1E1E1E solid 5px;
+  text-decoration: underline;
+  color: #BCA474;
+  background-color: #1E1E1E;
 }
 
 /* HEADER/NAVBAR */
@@ -248,6 +294,7 @@ footer img:hover {
 
 /* SERVICIOS */
 .mainServicios {
+  min-height: 100%;
   padding-top: 150px;
   row-gap: 50px;
   column-gap: 30px;
@@ -473,27 +520,6 @@ footer img:hover {
 .paddingsContacto .inputComentarios {
   width: 460px;
   margin-bottom: 20px;
-}
-.botonSubmit {
-  width: 120px;
-  padding: 0px 25px;
-  font-family: "Merienda", cursive;
-  border-radius: 10px;
-  border: solid black 4px;
-  text-decoration: underline;
-  color: #1E1E1E;
-  background-color: #ECD8B1;
-}
-
-.botonLimpiar {
-  width: 120px;
-  padding: 0px 25px;
-  font-family: "Merienda", cursive;
-  border-radius: 10px;
-  border: solid black 4px;
-  text-decoration: underline;
-  color: #1E1E1E;
-  background-color: #ECD8B1;
 }
 
 /* INDEX RESOLUCION MENOR A 1024 PX */

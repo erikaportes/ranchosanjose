@@ -28,6 +28,14 @@
     color: $color-secundario;
     background-color: $color-claro;
   }
+
+  .buttonIndexInterior:hover {
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-primario;
+    background-color: $color-secundario;
+  }
+ 
 }
 
 /* BUTTON SERVICIOS */
@@ -45,29 +53,51 @@
     color: $color-secundario;
     background-color: $color-claro;
   }
+
+  .buttonServiciosInterior:hover {
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-primario;
+    background-color: $color-secundario;
+  }
+ 
 }
 
-  /* BUTTONS CONTACTO */
-  .botonesForm {
-    .botonSubmit {
-        width: 120px;
-        padding: 0px 25px;
-        font-family: $font-family;
-        border-radius: 10px;
-        border: solid black 4px;
-        text-decoration: underline;
-        color: $color-secundario;
-        background-color: $color-claro;
-    }
-    
-    .botonLimpiar {
-        width: 120px;
-        padding: 0px 25px;
-        font-family: $font-family;
-        border-radius: 10px;
-        border: solid black 4px;
-        text-decoration: underline;
-        color: $color-secundario;
-        background-color: $color-claro;
-    }
+/* BUTTONS CONTACTO */
+.botonesForm {
+  .botonSubmit {
+    width: 120px;
+    padding: 0px 25px;
+    font-family: $font-family;
+    border-radius: 10px;
+    border: solid black 4px;
+    text-decoration: underline;
+    color: $color-secundario;
+    background-color: $color-claro;
+  }
+
+  .botonSubmit:hover {
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-primario;
+    background-color: $color-secundario;
+  }
+
+  .botonLimpiar {
+    width: 120px;
+    padding: 0px 25px;
+    font-family: $font-family;
+    border-radius: 10px;
+    border: solid black 4px;
+    text-decoration: underline;
+    color: $color-secundario;
+    background-color: $color-claro;
+  }
+
+  .botonLimpiar:hover {
+    border: #1E1E1E solid 5px;
+    text-decoration: underline;
+    color: $color-primario;
+    background-color: $color-secundario;
+  }
 }
