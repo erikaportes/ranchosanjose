@@ -190,7 +190,9 @@ footer .medioscontacto {
   align-content: center;
   flex-wrap: wrap;
 }
-footer dl, footer ol, footer ul {
+footer dl,
+footer ol,
+footer ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -597,6 +599,7 @@ footer img:hover {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    object-fit: cover;
     padding-left: 40px;
     animation-name: miAnimacion;
     animation-iteration-count: infinite;
@@ -916,6 +919,14 @@ footer img:hover {
 }
 /* BLOG RESOLUCION MENOR A 768px */
 @media screen and (max-width: 768px) {
+  .blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .blog .cardBlog {
     width: 300px;
     height: auto;

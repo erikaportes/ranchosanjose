@@ -85,6 +85,7 @@
         background-size: cover;
         color: white;
         @include flex(column, center);
+        object-fit: cover;
         padding-left: 40px;
         animation-name: miAnimacion;
         animation-iteration-count: infinite;

@@ -19,6 +19,8 @@
 /* BLOG RESOLUCION MENOR A 768px */
 @media screen and (max-width: 768px) {
     .blog {
+        @include flex(row, center);
+
         .cardBlog {
             @include medidas(300px, auto);
 
