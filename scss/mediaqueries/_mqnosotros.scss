@@ -33,13 +33,14 @@
             .textoVision {
                 @include medidas(700px, 190px);
                 padding-bottom: 0px;
+                padding-top: 45px;
             }
         }
 
         .cardValores {
             @include flex(column, center);
             margin-bottom: 40px;
-            margin-top: 35px;
+            margin-top: 40px;
 
             .textoValores {
                 @include medidas(700px, 190px);

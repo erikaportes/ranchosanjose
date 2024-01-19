@@ -805,6 +805,7 @@ footer img:hover {
     width: 700px;
     height: 190px;
     padding-bottom: 0px;
+    padding-top: 45px;
   }
   .paddingNosotros .cardValores {
     display: flex;
@@ -814,7 +815,7 @@ footer img:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    margin-top: 35px;
+    margin-top: 40px;
   }
   .paddingNosotros .cardValores .textoValores {
     width: 700px;
