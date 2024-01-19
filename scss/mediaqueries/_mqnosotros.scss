@@ -38,7 +38,8 @@
 
         .cardValores {
             @include flex(column, center);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            margin-top: 40px;
 
             .textoValores {
                 @include medidas(700px, 190px);
