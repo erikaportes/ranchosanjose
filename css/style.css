@@ -600,7 +600,6 @@ footer img:hover {
     align-items: center;
     flex-wrap: wrap;
     object-fit: cover;
-    padding-left: 40px;
     animation-name: miAnimacion;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -626,6 +625,9 @@ footer img:hover {
     100% {
       background-image: url(../img/novios-arbustos-foto.png);
     }
+  }
+  .portadaIndex h1 {
+    padding-left: 20px;
   }
   .descripcionIndex .imagenesAbajoIndex {
     margin-bottom: 24px;

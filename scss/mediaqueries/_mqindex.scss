@@ -86,7 +86,6 @@
         color: white;
         @include flex(column, center);
         object-fit: cover;
-        padding-left: 40px;
         animation-name: miAnimacion;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -118,7 +117,11 @@
                 background-image: url(../img/novios-arbustos-foto.png);
             }
         }
+
+        h1 {
+            padding-left: 20px;}
     }
+
 
     .descripcionIndex {
         .imagenesAbajoIndex {
